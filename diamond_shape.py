@@ -14,5 +14,12 @@ def print_diamond_shape():
         if n % 2 == 0:
             print("Please provide an odd integer.")
             return
+
 # Main
+        for i in range (1, n+1, 2):
+            print(("*" * i).center(n))
+
+        for i in range (n-2, 0, -2):
+            print(("*" * i).center(n))
+            
 # Handle non-integer inputs
