@@ -3,3 +3,9 @@
 
 # Note: If an even number is passed, the function should return "Please provide an odd integer."
 
+
+
+# Prompt user to enter a number
+# Check if the inputted number is an odd number
+# Main
+# Handle non-integer inputs
