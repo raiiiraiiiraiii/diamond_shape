@@ -11,15 +11,20 @@ def print_diamond_shape():
         width = int(input("Enter a number for the diamond's width: "))
 
 # Check if the inputted number is an odd number
-        if n % 2 == 0:
+        if width % 2 == 0:
             print("Please provide an odd integer.")
             return
 
 # Main
-        for i in range (1, n+1, 2):
-            print(("*" * i).center(n))
+        for i in range (1, width+1, 2):
+            print(("*" * i).center(width))
 
-        for i in range (n-2, 0, -2):
-            print(("*" * i).center(n))
-            
+        for i in range (width-2, 0, -2):
+            print(("*" * i).center(width))
+
 # Handle non-integer inputs
+    except ValueError:
+        print("Invalid input. Please enter an integer.")
+
+# Call the function
+print_diamond_shape()
