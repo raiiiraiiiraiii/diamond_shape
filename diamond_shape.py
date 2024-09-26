@@ -4,8 +4,12 @@
 # Note: If an even number is passed, the function should return "Please provide an odd integer."
 
 
+def print_diamond_shape():
+    try:
 
 # Prompt user to enter a number
+        width = int(input("Enter a number for the diamond's width: "))
+
 # Check if the inputted number is an odd number
 # Main
 # Handle non-integer inputs
